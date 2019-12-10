@@ -2,8 +2,14 @@
 
 console.log('js linked!');
 
-function Pet (breed) {
+function Pet (breed, weight, description) {
   this.breed = breed;
+  this.weight = weight;
+  this.description = description;
+}
+
+Pet.prototype.getDescription = function() {
+  
 }
 
 var ginger = new Pet('goldendoodle');
